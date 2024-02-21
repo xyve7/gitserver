@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "JetBrainsMono Nerd Font";
+  src: url("/usr/share/fonts/TTF/JetBrainsMonoNerdFontMono-Regular.ttf");
+}
+
+:root {
+  --bg: white;
+  --fg: black;
+  --link-fg: blue;
+  --link-hover-fg: white;
+  --link-hover-bg: blue;
+  --footer-fg: gray;
+}
+
+[theme="dark"] {
+  --bg: black;
+  --fg: white;
+  --link-fg: blue;
+  --link-hover-fg: black;
+  --link-hover-bg: blue;
+  --footer-fg: gray;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  display: inline-block;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.card {
+  text-indent: 2em;
+}
+
+.card:hover {
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover-fg);
+}
+
+
+
+.body {
+  font-family: "JetBrainsMono Nerd Font";
+  background-color: var(--bg);
+  color: var(--fg)
+}
+
+.list {
+  list-style-type: "";
+  padding-right: 6%;
+}
+
+.list-element {
+  text-decoration: underline;
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+.list-element:hover {
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover-fg);
+}
+
+.border {
+  border-color: var(--footer-fg);
+  border-width: 2px;
+  border-style: solid;
+}
+
+.text-button {
+  cursor: pointer;
+  user-select: none;
+}
+
+.content {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+}
+
+.footer {
+  margin: 0 auto;
+  width: 50%;
+  color: var(--footer-fg);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--link-fg);
+}
+
+.link:hover {
+  background-color: var(--link-hover-bg);
+  color: var(--link-hover-fg);
+}
+
+.repo_info {
+  width: max-content;
+  padding-left: 2%;
+  padding-right: 2%;
+}
